@@ -26,7 +26,7 @@ payload = {
 
 
 # sending post request to TensorFlow Serving server
-r = requests.post('http://localhost:9000/v1/models/ImageClassifier:predict', json=payload)
+r = requests.post('http://192.168.115.26:1001/v1/models/image-serving:predict', json=payload)
 pred = json.loads(r.content.decode('utf-8'))
 
 
