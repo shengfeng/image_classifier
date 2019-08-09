@@ -18,7 +18,7 @@ def hello_world():
 
 
 
-@app.route('/imageclassifier/predict', methods=['POST'])
+@app.route('/imageclassifier/predict/', methods=['POST'])
 def image_classifier():
     # Decoding and pre-processing base64 image
     img = image.img_to_array(image.load_img(
